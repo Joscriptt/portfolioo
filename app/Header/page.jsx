@@ -20,7 +20,7 @@ let links = [
   { icons: <PiBagSimpleLight />, path: "/product" },
 ];
 
-function page() {
+function Headpage() {
   const pathname = usePathname() || "";
   const [hoveredPath, setHoveredPath] = useState(pathname);
   const { theme, systemTheme, setTheme } = useTheme();
@@ -100,4 +100,4 @@ function page() {
   );
 }
 
-export default page;
+export default Headpage;

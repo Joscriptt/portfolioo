@@ -146,9 +146,9 @@ function page() {
             </div>
             <div className="mt-6">
               <div className="cursor-pointer">
-                {links.map((link) => (
+                {links.map((link, indx) => (
                   <div
-                    key={link.img}
+                    key={link.href}
                     className="bg-white dark:bg-[#373737] mt-3  mb-4 rounded-xl  max-md:flex-col max-md:items-start flex items-center justify-between p-5 dark:border-neutral-600  shadow-md drop-shadow-md dark:border max-md:p-7 "
                   >
                     <Link href={link.href}>
@@ -167,7 +167,7 @@ function page() {
                           </h1>
                           <p className="text-lg text-neutral-400 max-md:my-1">
                             {link.subtitle.map((subt) => (
-                              <span>{subt}</span>
+                              <span key={subt}>{subt}</span>
                             ))}
                           </p>
                         </div>
