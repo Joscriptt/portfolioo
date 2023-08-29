@@ -73,7 +73,7 @@ function page() {
               opacity: 1,
               transition: { duration: 0.4, delay: 0.3 },
             }}
-            className="aspect-square rounded-lg"
+            className="aspect-square object-cover rounded-lg"
             src="/img/img1.png"
             alt=""
           />
